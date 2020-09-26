@@ -25,6 +25,6 @@ for name, model in models:
     print('name:%s mean(平均值):%.2f var(方差):%.2f std(标准差):%.2f' % (name, cv_score.mean(), cv_score.var(), cv_score.std()))
     print(cv_score)
 # 股市也是用 box 图
-plt.boxplot(result_set, labels=names)
+plt.boxplot(x=result_set, labels=names)
 # 显示图表，橙色线表示中位线，中位线越靠上，算法越好，每个算法上下两条横线分别表示 score 的最大值和最小值，最小值越小算法越差
 plt.show()
